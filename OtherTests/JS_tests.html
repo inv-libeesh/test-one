@@ -37,6 +37,22 @@ function removeVowel() {
 	}
 	alert(newStr);
 }
+
+function FizzBuzz() {
+	for(i=1; i<101; i++) {
+		if ((i % 3 == 0) && (i % 5 == 0)) {
+			console.log("FIZZBUZZ");
+		} else if (i % 3 == 0) {
+			console.log("FIZZ");
+		} else if (i % 5 == 0) {
+			console.log("BUZZ");
+		} else {
+			console.log(i);
+		}
+	}
+}
+
+
 </script>
 </head>
 <body>
@@ -48,6 +64,9 @@ function removeVowel() {
 <input type="text" name="vowel" id="vowel">
 <input type="button" value="remove Vowel" onclick="removeVowel()">
 <br/>
+<br/>
+<h1>FizzBuzz</h1>
+<input type="button" value="FizzBuzz" onclick="FizzBuzz()">
 
 </body>
 </html>
